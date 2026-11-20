@@ -55,3 +55,16 @@ plt.xlabel("Study Hours")
 plt.ylabel("Marks")
 plt.title("Relationship between Study Hours and Marks")
 plt.show()
+
+plt.hist(marks, bins=5, edgecolor='black')
+
+plt.xlabel("Marks")
+plt.ylabel("Number of Students")
+plt.title("Distribution of Marks")
+plt.show()
+
+np.random.seed(42)
+
+random_marks = np.random.randint(0, 101, size=5)
+
+print(random_marks)
